@@ -1,0 +1,339 @@
+/* =========================
+   Fonts & General Styles
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #2e2e2e; /* charcoal */
+  color: #f8f8f5; /* off-white */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #66c7c2; /* light teal */
+  margin-bottom: 15px;
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #333 0%, #2e2e2e 50%, #262626 100%);
+  color: #f8f8f5;
+}
+
+.hero-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #66c7c2;
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin: 15px 0;
+  color: #ddd;
+}
+
+/* =========================
+   Navigation
+========================= */
+.main-nav {
+  margin-top: 20px;
+}
+
+.main-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #66c7c2;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #4da7a2;
+  text-decoration: underline;
+}
+
+/* =========================
+   Social Media
+========================= */
+#social-media {
+  padding: 50px 20px;
+  background-color: #262626;
+}
+
+.social-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #66c7c2;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #4da7a2;
+}
+
+/* =========================
+   Gallery Section
+========================= */
+#gallery {
+  padding: 50px 20px;
+  background-color: #2e2e2e;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery-img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:nth-child(even) {
+  transform: rotate(3deg);
+}
+
+.gallery-img:hover {
+  transform: scale(1.05) rotate(0deg);
+}
+
+/* =========================
+   Newsletter
+========================= */
+#newsletter {
+  padding: 50px 20px;
+  background-color: #262626;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  margin-right: 10px;
+  background-color: #333;
+  color: #f8f8f5;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #66c7c2;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #4da7a2;
+}
+
+/* =========================
+   Articles / Tutorials
+========================= */
+#articles {
+  padding: 50px 20px;
+  background-color: #2e2e2e;
+}
+
+.articles-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.article-card {
+  background-color: #333;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.article-card a {
+  color: #66c7c2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.article-card a:hover {
+  color: #4da7a2;
+  text-decoration: underline;
+}
+
+/* =========================
+   Quick Stats
+========================= */
+#stats {
+  padding: 50px 20px;
+  background-color: #262626;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background-color: #333;
+  padding: 20px;
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.stat-card h3 {
+  color: #66c7c2;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   Projects
+========================= */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.project-card {
+  background-color: #333;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  color: #66c7c2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #4da7a2;
+  text-decoration: underline;
+}
+
+/* =========================
+   Contact Form
+========================= */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #f8f8f5;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #66c7c2;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #4da7a2;
+}
+
+/* Contact Methods */
+.contact-methods a {
+  color: #66c7c2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-methods a:hover {
+  color: #4da7a2;
+  text-decoration: underline;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  padding: 20px;
+  background-color: #1f1f1f;
+  color: #999;
+  font-size: 0.9em;
+  margin-top: 50px;
+}
+
+/* Apply to all sections */
+section {
+  max-width: 800px;       /* keeps text from being too wide */
+  margin: 0 auto;         /* centers horizontally */
+  padding: 40px 20px;     /* adds space around content */
+  text-align: center;     /* centers text inside the section */
+}
+
+/* Optional: headings */
+section h2 {
+  color: #00BFA6;         /* teal accent */
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+section p {
+  color: #CCCCCC;         /* light grey text */
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+/* Header centering */
+header.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Navigation links */
+nav.main-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #00BFA6;
+}

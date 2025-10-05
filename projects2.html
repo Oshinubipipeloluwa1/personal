@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #2B2B2B; /* Charcoal background */
+      color: #CCCCCC; /* Light grey text */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      color: #00BFA6; /* Teal accent */
+      font-size: 3em;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    /* Optional teal underline below heading */
+    h1::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background-color: #00BFA6;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+
+    /* Simple rotating loader above text */
+    .loader {
+      border: 4px solid #2B2B2B; /* matches background */
+      border-top: 4px solid #00BFA6; /* teal accent */
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 30px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="loader"></div>
+  <h1>Portfolio</h1>
+  <p>My projects will be updated soon. Stay tuned!</p>
+
+</body>
+</html>
